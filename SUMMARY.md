@@ -1,5 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* Practicals
+* [Practicals](practicals.md)
 
