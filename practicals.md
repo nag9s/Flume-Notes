@@ -20,6 +20,10 @@ Click Submit.
 
 Change the Flume configuration.
 
+
+
+In the below example, netcat is the source and the output from the netcat will be stored to HDFS using Memory channel
+
 ```
 Open Cloudera Manager in your web browser.
 
