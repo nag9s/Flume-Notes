@@ -4,31 +4,76 @@ Click File Browser.
 
 Create the /flume/events directory.
 
+```
+In the /user/cloudera directory, click New-&gt;Directory.
 
+Create a directory named flume.
 
-    In the /user/cloudera directory, click New-&gt;Directory.
+In the flume directory, create a directory named events.
 
-    Create a directory named flume.
+Check the box to the left of the events directory, then click the Permissions setting.
 
-    In the flume directory, create a directory named events.
+Enable Write access for Group and Other users.
 
-    Check the box to the left of the events directory, then click the Permissions setting.
-
-    Enable Write access for Group and Other users.
-
-    Click Submit.
-
-
+Click Submit.
+```
 
 Change the Flume configuration.
 
+```
+Open Cloudera Manager in your web browser.
+
+In the list of services, click Flume.
+
+Click the Configuration tab.
+
+Scroll or search for the Configuration File item.
 
 
-    Open Cloudera Manager in your web browser.
+# Please paste flume.conf here. Example:
 
-    In the list of services, click Flume.
+# Sources, channels, and sinks are defined per
+# agent name, in this case 'tier1'.
+tier1.sources  = source1
+tier1.channels = channel1
+tier1.sinks    = sink1
 
-    Click the Configuration tab.
+# For each source, channel, and sink, set
+# standard properties.
+tier1.sources.source1.type     = netcat
+tier1.sources.source1.bind     = 127.0.0.1
+tier1.sources.source1.port     = 9999
+tier1.sources.source1.channels = channel1
+tier1.channels.channel1.type   = memory
+tier1.sinks.sink1.type= HDFS
+tier1.sinks.sink1.fileType=DataStream
+tier1.sinks.sink1.channel      = channel1
+tier1.sinks.sink1.hdfs.path = hdfs://localhost:8020/user/cloudera/flume/events
 
-    Scroll or search for the Configuration File item.
+# Other properties are specific to each type of
+# source, channel, or sink. In this case, we
+# specify the capacity of the memory channel.
+tier1.channels.channel1.capacity = 100
+
+```
+
+At the top of the settings list, click 
+
+On the far right, choose 
+
+Actions-
+
+&gt;
+
+Restart
+
+ to restart Flume.
+
+When the restrart is complete, click 
+
+Close
+
+.
+
+
 
