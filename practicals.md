@@ -54,26 +54,13 @@ tier1.sinks.sink1.hdfs.path = hdfs://localhost:8020/user/cloudera/flume/events
 # source, channel, or sink. In this case, we
 # specify the capacity of the memory channel.
 tier1.channels.channel1.capacity = 100
-
 ```
 
-At the top of the settings list, click 
+At the top of the settings list, click
 
-On the far right, choose 
+On the far right, choose Actions-&gt;Restart  to restart Flume.
 
-Actions-
-
-&gt;
-
-Restart
-
- to restart Flume.
-
-When the restrart is complete, click 
-
-Close
+When the restrart is complete, click Close
 
 .
-
-
 
