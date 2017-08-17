@@ -20,8 +20,6 @@ Click Submit.
 
 Change the Flume configuration.
 
-
-
 In the below example, netcat is the source and the output from the netcat will be stored to HDFS using Memory channel
 
 ```
@@ -65,6 +63,12 @@ At the top of the settings list, click
 On the far right, choose Actions-&gt;Restart  to restart Flume.
 
 When the restrart is complete, click Close
+
+
+
+
+
+### Passing Data to the Source
 
 .
 
