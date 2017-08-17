@@ -74,27 +74,22 @@ $ curl telnet://localhost:9999
 Ok
 ```
 
-.`[cloudera@quickstart ~]$ curl telnet://localhost:9999`
+.`[cloudera@quickstart ~]$ curl telnet://localhost:9999  
+OK`
 
-``
+`hello`
 
-`OK`
+`OK`
 
-`hello`
+`here is flume`
 
-`OK`
+`OK`
 
-`here is flume`
+`demo`
 
-`OK`
+`OK`
 
-`demo`
+`^C`
 
-`OK`
-
-`^C`
-
-`[cloudera@quickstart ~]$ `
-
-
+`[cloudera@quickstart ~]$`
 
