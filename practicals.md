@@ -64,11 +64,18 @@ On the far right, choose Actions-&gt;Restart  to restart Flume.
 
 When the restrart is complete, click Close
 
-
-
-
-
 ### Passing Data to the Source
+
+
+
+To pass data to NetCat source, you have to open the port given in the configuration file. Open a separate terminal and connect to the source \(56565\) using the **curl** command. When the connection is successful, you will get a message “**connected**” as shown below.
+
+```
+$ curl telnet://localhost:9999
+
+Ok
+
+```
 
 .
 
