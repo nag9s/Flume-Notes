@@ -74,7 +74,7 @@ $ curl telnet://localhost:9999
 Ok
 ```
 
-.`[cloudera@quickstart ~]$ curl telnet://localhost:9999  
+.`[cloudera@quickstart ~]$ curl telnet://localhost:9999    
 OK`
 
 `hello`
@@ -92,4 +92,22 @@ OK`
 `^C`
 
 `[cloudera@quickstart ~]$`
+
+
+
+
+
+In the Hue File Browser, open the 
+
+/user/cloudera/flume/events
+
+ directory.
+
+There will be a file named 
+
+FlumeData
+
+ with a serial number as the file extension. Click the file name link to view the data sent by Flume to HDFS.
+
+
 
