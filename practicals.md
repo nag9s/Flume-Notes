@@ -74,7 +74,7 @@ $ curl telnet://localhost:9999
 Ok
 ```
 
-.`[cloudera@quickstart ~]$ curl telnet://localhost:9999        
+.`[cloudera@quickstart ~]$ curl telnet://localhost:9999          
 OK`
 
 `hello`
