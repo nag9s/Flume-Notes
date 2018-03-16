@@ -2,7 +2,7 @@ In the VM web browser, open Hue.
 
 Click File Browser.
 
-Create the /flume/events directory.
+Create the /flume/events directory under /user/cloudera
 
 ```
 In the /user/cloudera directory, click New-&gt;Directory.
@@ -74,7 +74,7 @@ $ curl telnet://localhost:9999
 Ok
 ```
 
-.`[cloudera@quickstart ~]$ curl telnet://localhost:9999      
+.`[cloudera@quickstart ~]$ curl telnet://localhost:9999        
 OK`
 
 `hello`
@@ -98,4 +98,10 @@ In the Hue File Browser, open the /user/cloudera/flume/events directory.
 There will be a file named FlumeData
 
 with a serial number as the file extension. Click the file name link to view the data sent by Flume to HDFS.
+
+
+
+
+
+If you see permission errors, enable group permission on /user/cloudera directory
 
